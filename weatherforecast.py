@@ -18,7 +18,7 @@ r = requests.get(f'https://www.metaweather.com/api/location/{woeid}/')
 
 d = r.json()
 
-print(f'Weather for Dhaka:')
+print(f'Weather for {city}:')
 for i in d['consolidated_weather']:
     date = i['applicable_date']
     weather_state = i['weather_state_name']
